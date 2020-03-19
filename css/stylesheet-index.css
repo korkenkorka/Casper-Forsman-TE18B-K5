@@ -1,0 +1,54 @@
+body {
+    height: 300vh;
+    margin: 0px;
+    overflow-x: hidden;
+    background-repeat:;
+}
+
+/* Index layout */
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #505050;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(40, 40, 40, 60);
+    outline: none;
+    border-radius: 5px;
+}
+
+#background-image {
+    position: sticky;
+    top: 0px;
+    margin-left: 10%;
+    height: 100vh;
+}
+
+#layout-holder {
+    padding-top: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-row: 300vh;
+    
+}
+
+#layout-holder_side-bar {
+    background-color: #505050;
+    height: 300vh;
+    width: 100%;
+}
+
+#layout-holder_content-holder {
+    width: 100%;
+    height: 300vh;
+    background-image: url(../img/spaceship-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
