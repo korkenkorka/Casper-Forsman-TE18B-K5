@@ -1,9 +1,17 @@
-body {
-    height: 300vh;
-    margin: 0px;
-    overflow-x: hidden;
-    background-repeat:;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    margin: 0px;
+    height: 700vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /* Index layout */
 
@@ -13,42 +21,144 @@ body::-webkit-scrollbar {
  
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #505050;
+    background-color: #000E25;
 }
  
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(40, 40, 40, 60);
+    background-color: #29768A;
     outline: none;
     border-radius: 5px;
 }
 
+
+/* Main background and text */
+
 #background-image {
-    position: sticky;
-    top: 0px;
-    margin-left: 10%;
-    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
-#layout-holder {
-    padding-top: 0px;
-    margin-top: 0px;
-    width: 100%;
+#background-image-restrict {
+    height: 120vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#background-text {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    margin-left: -50vw;
+    transform: translate(-50%, -50%);
+    transition: margin-left 1.5s ease;
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    letter-spacing: 0.5vw;
+    margin-bottom: 1vh;
+}
+
+h4 {
+    margin: 0px;
+    color: white;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3vw;
+    font-weight: lighter;
+}
+
+
+
+
+/* Top menu */
+
+#top-menu {
+    width: 90vw;
+    height: 13vh;
+    background-color: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: grid;
-    grid-template-columns: 10% 90%;
-    grid-row: 300vh;
-    
+    grid-template-columns: 50% 50%;
+    transition: background-color 0.5s ease, top 0.5s ease;
+    top: 0px;
+    z-index: 100;
+    position: fixed;
 }
 
-#layout-holder_side-bar {
-    background-color: #505050;
-    height: 300vh;
-    width: 100%;
+#name-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.2vw;
+    color: white;
+    font-size: 3vw;
 }
 
-#layout-holder_content-holder {
-    width: 100%;
-    height: 300vh;
-    background-image: url(../img/spaceship-bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+#top-menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
 }
+
+.top-menu-buttons-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    margin-top: 35%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgba(0,0,0,0);
+    transition: text-decoration-color 0.3s linear;
+}
+
+.top-menu-buttons-text:hover {
+    text-decoration-color: white;
+}
+
+#top-menu-buttons-contact-button {
+    height: fit-content;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#top-menu-buttons-contact-button:hover {
+    background-color: white;
+    color: #000E25;
+}
+
+
+/* Main content */
+
+#main-content-holder {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    background-color: #000E25;
+}
+
+    /* Projects */
+
+#projects {
+    background-color: white;
+    width: 80vw;
+    margin-left: 10vw;
+    height: 70vh;
+}
+
+.projects-project-layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
