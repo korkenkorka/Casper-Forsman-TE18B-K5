@@ -11,6 +11,11 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > window.innerHeight - window.innerHeight / 10) {
         document.querySelector('div[id=top-menu]').style.top = 0 - window.innerHeight / 2 + "px";
     }
+
+    if (window.scrollY > window.innerHeight / 2) {
+        document.querySelector('div[id=projects]').style.marginLeft = 20 + "vw";
+    }
+
 });
 
 document.querySelector('div[id=background-text]').style.marginLeft = 30 + "%";
