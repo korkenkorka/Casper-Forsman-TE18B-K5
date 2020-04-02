@@ -13,8 +13,16 @@ window.addEventListener("scroll", () => {
         document.querySelector('div[id=top-menu]').style.top = 0 - window.innerHeight / 2 + "px";
     };
 
-    if (window.scrollY > window.innerHeight / 2) {
-        document.querySelector('div[id=projects]').style.marginLeft = 20 + "vw";
+    if (window.scrollY > window.innerHeight / 2 + 100) {
+        document.querySelector('div[id=projects-project-1]').style.marginLeft = 0 + "px";
+    };
+
+    if (window.scrollY > window.innerHeight + 100) {
+        document.querySelector('div[id=projects-project-2]').style.marginLeft = 0 + "px";
+    };
+
+    if (window.scrollY > window.innerHeight + ( window.innerHeight / 2 ) + 100) {
+        document.querySelector('div[id=projects-project-3]').style.marginLeft = 0 + "px";
     };
 
     if (window.scrollY > document.body.clientHeight - (window.innerHeight * 1.3)) {
