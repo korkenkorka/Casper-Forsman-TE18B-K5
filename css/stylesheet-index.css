@@ -280,20 +280,10 @@ nav {
 
 #about-me-section {
     position: relative;
-    z-index: 11;
+    z-index: 10;
     background-color: white;
-    height: 100vh;
+    height: 92.5vh;
     width: 100vw;
-}
-
-#about-me-section-header {
-    position: absolute;
-    background-color: white;
-    width: 60vw;
-    margin-left: 20vw;
-    margin-top: -10vh;
-    height: 10vh;
-
 }
 
 #about-me-section-information-corner-details {
@@ -323,7 +313,7 @@ nav {
     width: 30vw;
     margin-left: -0.5vw;
     margin-top: calc(-95vh - 0.5vw);
-    height: 115vh;
+    height: 112vh;
     margin-left: 15vw;
     background-color: white;   
 }
@@ -336,11 +326,12 @@ nav {
     margin-right: 10vw;
     margin-top: -110vh;
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 15vh 85vh;
 }
 
 #about-me-section-information-header {
     color: black;
+    padding-top: 5vh;
     width: 40vw;
     text-align: center;
     height: 10vh;
@@ -365,6 +356,85 @@ nav {
 }
 
 
+/* Capabilities section */
+
+#capabilities-section {
+    background-color: #247491;
+    height: 150vh;
+    width: 100vw;
+}
+
+#capabilities-section-header {
+    width: 100vw;
+    padding-top: 40vh;
+    color: white; 
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw;
+    text-align: center;
+}
+
+#capabilities-section-content-box {
+    height: 80vh;
+    width: 50vw;
+    margin-left: 25vw;
+    display: grid;
+    grid-template-rows: 10vh repeat(6, 5vh) 10vh repeat(2, 5vh) 10vh repeat(2, 5vh);
+    grid-template-columns: repeat(2, 25vw);
+}
+
+.capabilities-section-content-capability-header {
+    height: 4vh;
+    padding-top: 6vh;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+    color: white;
+}
+
+.capabilities-section-content-capability-text {
+    height: 3vh;
+    padding-top: 2vh;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    text-indent: 4vw;
+}
+
+.capabilities-section-content-capability-language-text {
+    height: 3vh;
+    padding-top: 2vh;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
+    color: white;
+    text-align: center;
+}
+
+.capabilities-section-content-capability-bar-shell {
+    width: 80%;
+    margin-left: 10%;
+    height: 2vh;
+    margin-top: 2.4vh;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+.capabilities-section-content-capability-bar-progress {
+    height: 2vh;
+    background-color: white;
+    width: 0px;
+    transition: width 1s ease;
+}
 
 
 /* Footer */
@@ -374,6 +444,7 @@ footer {
 }
 
 #footer {
+    background-color: #247491;
     position: relative;
     z-index: 11;
     height: 55vh;
