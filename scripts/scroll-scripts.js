@@ -2,7 +2,7 @@ window.addEventListener("scroll", () => {
     setTimeout(() => {
         
         if (window.scrollY > 20) {
-            document.querySelector('div[id=top-menu]').style.backgroundColor = '#000E25';
+            document.querySelector('div[id=top-menu]').style.backgroundColor = '#194049';
             document.querySelector('div[id=top-menu]').style.top = 0 - window.innerHeight / 30 + "px";
         }
         else if (window.scrollY < 20 ) {
@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
             capabilitiesAnim();
         };
         
-    }, 500); 
+    }, 250); 
 });
 
 document.querySelector('div[id=background-text]').style.marginLeft = 30 + "%";
