@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
         };
     
         if (window.scrollY > document.body.clientHeight - (window.innerHeight * 1.3)) {
-            footerAnim();
+            document.querySelector('footer').style.top = 0;
         };
     
         if (window.scrollY > ( window.innerHeight / 6 ) + document.querySelector('div[id=capabilities-section]').offsetTop ) {
@@ -51,27 +51,3 @@ function capabilitiesAnim() {
         document.querySelector('div[id=capability-' + i + ']').style.width = capabilitiesData[i];
     };
 };
-
-function footerAnim () {
-
-    startTime = 0.5;
-    timeMultiplier = 0.2;
-
-    for(let i = 0; i < 11; i++) {
-        document.querySelectorAll('img[id=t-' + i + ']').forEach(item => {         
-            item.style.transition = "top " + ( startTime + timeMultiplier * i ) + "s ease";
-        })
-    }
-
-    for(let j = 0; j < 11; j++) {
-        document.querySelectorAll('img[id=t-' + j + ']').forEach(item => {
-           
-            item.style.top = 0;
-        })
-    }
-
-    setTimeout(() => {
-        document.querySelector('div[id=footer-text-container]').style.top = 0;
-    }, 1900);
-
-}

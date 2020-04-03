@@ -24,7 +24,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-    background-color: #29768A;
+    background-color: #163741;
     outline: none;
     border-radius: 5px;
 }
@@ -148,8 +148,18 @@ nav {
 
 #background-transition {
     width: 100vw;
-    height: 50vh;
+    height: 20vh;
     background-color: #286876;
+}
+
+#background-transistion-triangle {
+    z-index: 15;
+    width: 0px;
+    height: 0px;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 10vw;
+    margin-left: 50vw;
 }
 
     /* Projects */
@@ -164,6 +174,7 @@ nav {
     display: grid;
     grid-template-rows: repeat(3, 70vh);
     margin-left: 20vw;
+    margin-bottom: 10vh;
 }
 
 .projects-project-layout {
@@ -430,42 +441,25 @@ footer {
 }
 
 #footer {
-    background-color: #247491;
     position: relative;
-    z-index: 11;
-    height: 55vh;
-    left: -8vw;
-    width: 108vw;
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: repeat(21, 5vw);
-}
-
-.footer-tree {
-    position: relative;
-    height: 100%;
-    top: 100vh;
-}
-
-#footer-text-container {
-    position: absolute;
+    background-color: #183c44;
     z-index: 12;
-    width: 108vw;
-    height: 40vh;
+    width: 100vw;
+    height: 35vh;
     padding-top: 15vh;
     display: grid;
-    grid-template-columns:  13vw 15vw 40vw 20vw 30vw;
-    grid-template-rows: 35vh 5vh;
-    transition: top 0.5s ease;
+    grid-template-columns:  10vw 20vw 20vw 20vw 30vw;
+    grid-template-rows: 35vh;
     top: 100vh;
+    transition: top 1s ease;
 }
 
 #footer-personal-information-container  {
     grid-column: 2;
     grid-row: 1;
     width: 15vw;
-    padding-top: 5h;
     height: 35vh;
+    margin-top: -5vh;
     display: grid;
     grid-template-columns: 15vw;
     grid-template-rows: 5vh 10vh 10vh 10vh;
