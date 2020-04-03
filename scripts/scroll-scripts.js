@@ -14,15 +14,15 @@ window.addEventListener("scroll", () => {
             document.querySelector('div[id=top-menu]').style.top = 0 - window.innerHeight / 2 + "px";
         };
     
-        if (window.scrollY > window.innerHeight / 2 + 100) {
+        if (window.scrollY > document.querySelector('div[id=projects-project-1]').offsetTop - ( window.innerHeight / 2 ) ) {
             document.querySelector('div[id=projects-project-1]').style.marginLeft = 0 + "px";
         };
-    
-        if (window.scrollY > window.innerHeight + 100) {
+
+        if (window.scrollY > document.querySelector('div[id=projects-project-2]').offsetTop - ( window.innerHeight / 2 ) ) {
             document.querySelector('div[id=projects-project-2]').style.marginLeft = 0 + "px";
         };
-    
-        if (window.scrollY > window.innerHeight + ( window.innerHeight / 2 ) + 100) {
+
+        if (window.scrollY > document.querySelector('div[id=projects-project-3]').offsetTop - ( window.innerHeight / 2 ) ) {
             document.querySelector('div[id=projects-project-3]').style.marginLeft = 0 + "px";
         };
     
@@ -39,7 +39,6 @@ window.addEventListener("scroll", () => {
 
 document.querySelector('div[id=background-text]').style.marginLeft = 30 + "%";
 
-document.querySelector('div[id=main-content-holder]').style.boxShadow = "0px -15vh 20vh " + window.innerHeight / 25 + "vh #000E25";
 
 
 
