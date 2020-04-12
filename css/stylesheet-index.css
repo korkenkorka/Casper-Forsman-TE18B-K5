@@ -522,3 +522,14 @@ footer {
 #footer-no-border {
     border-bottom-style: none;
 }
+
+
+/* Mobile viewport */
+@media only screen and (max-width: 600px) {
+
+
+
+
+
+    
+}
