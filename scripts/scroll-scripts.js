@@ -29,16 +29,25 @@ window.addEventListener("scroll", () => {
         if (window.scrollY > document.body.clientHeight - (window.innerHeight * 1.3)) {
             document.querySelector('footer').style.top = 0;
         };
-    
-        if (window.scrollY > ( window.innerHeight / 6 ) + document.querySelector('div[id=capabilities-section]').offsetTop ) {
-            capabilitiesAnim();
+        
+        if (window.scrollX > 600) {
+            if (window.scrollY > ( window.innerHeight / 6 ) + document.querySelector('div[id=capabilities-section]').offsetTop ) {
+                capabilitiesAnim();
+            };
+        }
+        else 
+        {
+            if (window.scrollY > document.querySelector('div[id=capabilities-section]').offsetTop ) {
+                capabilitiesAnim();
+            };
         };
         
     }, 250); 
 });
 
-document.querySelector('div[id=background-text]').style.marginLeft = 30 + "%";
-
+if (window.scrollX > 600) { 
+    document.querySelector('div[id=background-text]').style.marginLeft = 30 + "%";
+};
 
 
 
